@@ -10,11 +10,136 @@ body {
     background-color: #4E5166;
 }
 
-.banner {
-    font-family: 'Peralta', cursive;
-    font-size: 4rem;
-    padding: 20px;
-    text-align: center;
-    background-color: #70A0AF;
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+     rgba(0, 0, 0, 0.8)), url("/images/bg.jpg") center no-repeat;
+    background-size: cover;
 }
+
+.banner__text {
+    position: absolute;
+    top: 40%; /* Placed top-to-bottom */
+    left: 50%; /* Placed left-to-right */
+    transform: translate(-50%, -50%);
+}
+
+.banner__text h1 {
+    color: #fff;
+    font-family: 'Peralta', cursive;
+    font-size: 80px;
+    /* font-weight: 300; */
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.banner__text p {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.btns {
+    position: absolute;
+    top: 50px;   /* 50px from the top */
+    right: 60px;  /* 60px from the right */
+}
+
+.btn {
+    width: 170px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid tomato;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.login__btn {
+    background-color: tomato;
+}
+
+.signup__btn {
+    background-color: transparent;
+}
+
+.modal {
+    width: 400px;
+    background: linear-gradient(rgba(148, 42, 42, 0.8), 
+        rgba(185, 129, 129, 0.6)), 
+        url(/images/bg.jpg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.x-btn {
+    position: absolute;
+    right: 20px;
+    font-size: 50px;
+    color: #222;
+    cursor: pointer;
+}
+
+.form__header {
+    text-align: center;
+    margin: 80px 0 150px 0;
+    color: #fff;
+}
+
+.form__header h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.form__header h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__group {
+    margin-bottom: 10px;
+}
+
+.input__group input {
+    width: 250px;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: sans-serif;
+}
+
+/* Bookmark @26:00 */
 

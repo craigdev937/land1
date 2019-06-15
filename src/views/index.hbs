@@ -1,5 +1,58 @@
-<h1 class="banner">Landing Page</h1>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque nisi incidunt necessitatibus eligendi nam aspernatur autem, veritatis distinctio blanditiis dolorum eaque in? Fugit aut perferendis magni, non excepturi nam.</p>
+<main class="container">
+    <section class="banner__text">
+        <h1>Page</h1>
+        <p>Beautiful setting</p>
+    </section>
+    <section class="btns">
+        <button class="btn login__btn">Login</button>
+        <button class="btn signup__btn">Sign Up</button>
+    </section>
+    <section class="form__container"> {{!-- Hide the Form. --}}
+        <aside class="signup-form__wrapper modal">
+            <div class="x-btn signup-x">
+                &times;
+            </div>
+            <div class="form__header">
+                <h1>Code and Create</h1>
+                <h3>Join Us</h3>
+            </div>
+            <form action="" class="form">
+                <section class="input__group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                </section>
+                <section class="input__group">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="E-mail" />
+                </section>
+                <section class="input__group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="Password" />
+                </section>
+                <button type="button">Sign Up</button>
+            </form>
+        </aside>
+        <aside class="login-form__wrapper modal" hidden> {{!-- Hide the Form. --}}
+            <div class="x-btn login-x">
+                &times;
+            </div>
+            <div class="form__header">
+                <h1>Code and Create</h1>
+                <h3>Login</h3>
+            </div>
+            <form action="" class="form">
+                <section class="input__group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                </section>                
+                <section class="input__group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="Password" />
+                </section>
+                <button type="button">Login</button>
+            </form>
+        </aside>
+    </section>
+</main>
 
 
